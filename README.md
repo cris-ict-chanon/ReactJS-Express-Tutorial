@@ -9,11 +9,12 @@ for an amazing easy to understand explaination and demonstration
 
 Warning: This is a school work project, not suitable for production use. If you insist on using it, use at your own risk.
 
-## Required Materials: 
+## Required Materials : 
 
 Create-react-app (client directory)
-
-    npm create-react-app
+```
+npm create-react-app
+```
 
 Express ( inside: server/index.js )
 ```javascript
@@ -39,6 +40,19 @@ $> sudo apt-get update
 $> sudo apt-get install mysql-workbench-community
 $> sudo dpkg -i package.deb
 ```
+## To run the application : 
+First we need to boost up the npm inside client directory.
 
+```
+npm start
+```
+open [http://localhost:3000](http://localhost:3000) to view in your browser.
 
-	
+Next on the server directory, run the following code:
+```
+node server.js
+``` 	
+it should say
+```
+your server is running on port 3001
+```
