@@ -36,7 +36,30 @@ app.get('/employees', (req, res) => {
         } else {
             res.send(result);
         }
-    })
+    });
+});
+
+app.put("/update", (req, res) => {
+    const id = req.body.id;
+    const wage = req.body.wage;
+    db.query("UPDATE employees SET wage = ? WHERE id = ?", [wage, id], (err, result) =>{
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    });
+});
+
+app.delete('/delete/:id', (req, res) =>{
+    const id = req.params.id
+    db.query("DELETE FROM employees WHERE id = ?", id,(err, result) =>{
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    });
 })
 app.listen(3001, () => {
     console.log ("your server is running on port 3001");
