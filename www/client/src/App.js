@@ -57,7 +57,7 @@ function App() {
   return (
   <div className="App">
     <div className = "header">
-      <h1>Simple CRUD</h1>
+      <h1>SIMPLE CRUD</h1>
     </div>
     <div className="information">
       <label>Name:</label>
@@ -93,11 +93,11 @@ function App() {
       {employeeList.map((val, key) => {
         return <div className="employee">
           <div>
-          <h3>Name: {val.name}</h3>
-          <h3>Age: {val.age}</h3>
-          <h3>Country: {val.country}</h3>
-          <h3>Position: {val.position}</h3>
-          <h3>Wage: {val.wage}</h3>
+          <h3>name: {val.name}</h3>
+          <h3>age: {val.age}</h3>
+          <h3>country: {val.country}</h3>
+          <h3>position: {val.position}</h3>
+          <h3>wage: {val.wage}</h3>
           </div>
           <div>
            <input type ="text" placeholder ="2000..."

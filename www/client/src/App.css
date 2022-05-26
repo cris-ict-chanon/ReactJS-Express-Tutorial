@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(46, 46, 46);
+  background-color: #000181;
   width:auto;
   padding: 82px;
 }
@@ -14,7 +14,9 @@
   justify-content: center;
   width:100%;
   align-items: center;
-  color:rgb(228, 211, 199);
+  color:#4fa7c0;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
 }
 input {
   width: 300px;
@@ -22,17 +24,31 @@ input {
   font-size: 20px;
   padding-left: 10px;
   margin: 5px;
-  background-color: rgb(211, 211, 200);
+  background-color: transparent;
+  color: #FFcc98;
 }
  button {
   width: 320px;
   height: 50px;
   margin-top: 15px;
-  background-color: rgb(185, 176, 160);
+  background-color: transparent;
+  color: #fff7d9;
 }
  button:hover{
   cursor: pointer;
+  color: #ff9e0b;
+	font-size: 1.2em;
 }
+button {
+	list-style:none;
+  white-space:nowrap;
+}
+button{
+	display: inline-block;
+	padding: 0px 20px;
+  transition: all 0.3s ease 0s;
+}
+
 .employees {
   display: flex;
   flex-direction: column;
@@ -43,14 +59,16 @@ input {
 .employee {
   width: 700px;
   height: auto;
-  border: 1px solid;
-  border-color: rgb(231, 218, 218) rgb(231, 218, 218) rgb(231, 218, 218);
+  border: 2px solid;
+  border-color: #fff7d9 #fff7d9 #fff7d9;
   margin: 10px;
   display: flex;
   padding: 8px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 15px;
-  color: rgb(238, 231, 218);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffe6b6;
 }
 
 .employee h3 {
@@ -58,13 +76,14 @@ input {
 }
 
 .header {
-  color:rgb(0, 0, 0);
+  color:#ffcc98;
   text-align: center;
   font-size: 2vw;
-  background-image: url(bg-color.gif);
-  background-size: cover;
+  background-image: url(https://media.giphy.com/media/5gQUo8OW1GDawk8Jok/giphy.gif);
   background-clip: text;
   -webkit-background-clip: text;
   color:transparent;
+  font-family:'Times New Roman', Times, serif;
+  letter-spacing: 20px;
 }
 
